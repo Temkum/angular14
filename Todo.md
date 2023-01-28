@@ -16,5 +16,11 @@
 ## interpolation
 
 - Refers to embedded expression into marked text
-- By default it uses {`{ var_name }}` delimiters
+- By default it uses `{{ var_name }}` delimiters
 - used to bind properties in html and also show elements
+
+## property binding
+
+- helps set values for properties in html elements or directives
+- examples toggling, set path programmatically and share values between components
+  > interpolation is not recommended everywhere so use it for property or attrbute binding in html elements

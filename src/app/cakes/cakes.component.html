@@ -1,8 +1,11 @@
 <h3>cakes works!</h3>
+<button [disabled]="isDisabled">Load cakes</button>
+
+<br />
 
 {{ name }} by {{ baker }}
 
 <ul>
-  <li><img src="{{ src }}" alt="{{ name }}"></li>
-  <li><img src="{{ src2 }}" alt="{{ name2 }}"></li>
+  <li><img [src]="src" [alt]="name"></li>
+  <li><img [src]="src2" [alt]="name2"></li>
 </ul>
