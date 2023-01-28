@@ -12,3 +12,9 @@
 
 - `ng generate component component-name`
 - remember to add the component name in the module `app.module.ts`
+
+## interpolation
+
+- Refers to embedded expression into marked text
+- By default it uses {`{ var_name }}` delimiters
+- used to bind properties in html and also show elements
