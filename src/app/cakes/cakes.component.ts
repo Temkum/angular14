@@ -19,4 +19,10 @@ export class CakesComponent {
   handleClick() {
     this.isDisabled = true;
   }
+
+  nameInput: string = '';
+
+  handleInput(event: any) {
+    this.nameInput = event.target.value;
+  }
 }

@@ -1,8 +1,12 @@
 <h3>cakes works!</h3>
 <button [disabled]="isDisabled" (click)="handleClick()">Load cakes</button>
-
 <br />
+<input type="text" [(ngModel)]="nameInput">
 
+
+<p>{{ nameInput }}</p>
+
+<br>
 <ul>
   <li><img [src]="src" [alt]="name"></li>
   <li><img [src]="src2" [alt]="name2"></li>

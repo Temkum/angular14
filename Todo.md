@@ -28,3 +28,8 @@
 ## event binding
 
 - events lets you listen for and respond to user actions such as keystrokes, mouse movements, clicks and touches
+
+## Two way binding
+
+- Gives component a way to share data
+- used to listen to events, update values simultaneously between parent and child components
