@@ -15,4 +15,8 @@ export class CakesComponent {
   src2: string = '../../assets/img/cake2.jpg'
   
   isDisabled: boolean = false;
+
+  handleClick() {
+    this.isDisabled = true;
+  }
 }

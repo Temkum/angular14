@@ -24,3 +24,7 @@
 - helps set values for properties in html elements or directives
 - examples toggling, set path programmatically and share values between components
   > interpolation is not recommended everywhere so use it for property or attrbute binding in html elements
+
+## event binding
+
+- events lets you listen for and respond to user actions such as keystrokes, mouse movements, clicks and touches

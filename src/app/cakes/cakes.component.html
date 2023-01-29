@@ -1,9 +1,7 @@
 <h3>cakes works!</h3>
-<button [disabled]="isDisabled">Load cakes</button>
+<button [disabled]="isDisabled" (click)="handleClick()">Load cakes</button>
 
 <br />
-
-{{ name }} by {{ baker }}
 
 <ul>
   <li><img [src]="src" [alt]="name"></li>
