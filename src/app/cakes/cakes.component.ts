@@ -14,15 +14,9 @@ export class CakesComponent {
   baker2: string = 'Cakes by sparrow' 
   src2: string = '../../assets/img/cake2.jpg'
   
-  isDisabled: boolean = false;
+  isShown: boolean = false;
 
-  handleClick() {
-    this.isDisabled = true;
-  }
-
-  nameInput: string = '';
-
-  handleInput(event: any) {
-    this.nameInput = event.target.value;
+  toggleCakes() {
+    this.isShown = !this.isShown;
   }
 }

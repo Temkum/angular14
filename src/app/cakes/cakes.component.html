@@ -1,13 +1,16 @@
-<h3>cakes works!</h3>
-<button [disabled]="isDisabled" (click)="handleClick()">Load cakes</button>
+<h3>Yummy Cakes</h3>
+<!-- toggle cakes on click -->
+<!-- <button (click)="toggleCakes()">Load cakes</button> -->
+
+<!-- change btn text -->
+<button (click)="toggleCakes()">
+  <ng-container *ngIf="isShown">Hide cakes</ng-container>
+  <ng-container *ngIf="!isShown">Load cakes</ng-container>
+</button>
 <br />
-<input type="text" [(ngModel)]="nameInput">
-
-
-<p>{{ nameInput }}</p>
 
 <br>
-<ul>
-  <li><img [src]="src" [alt]="name"></li>
-  <li><img [src]="src2" [alt]="name2"></li>
+<ul *ngIf="isShown">
+  <li><img [src]="src" [alt]="name">{{ baker }}</li>
+  <li><img [src]="src2" [alt]="name2">{{ baker }}</li>
 </ul>
