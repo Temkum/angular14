@@ -71,3 +71,5 @@
 - ngIf
 - ngFor
 - ngSwitch
+
+## ngFor
