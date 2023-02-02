@@ -79,3 +79,5 @@
 - Simple function to use in a template expression to accept an input and return a transformed value.
 - Declare them once and used throughout the app.
 - Used to transform strings, currency, dates and other display data
+
+## style component

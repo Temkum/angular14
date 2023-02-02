@@ -3,16 +3,19 @@
 <!-- <button (click)="toggleCakes()">Load cakes</button> -->
 
 <!-- change btn text -->
-<button (click)="toggleCakes()">
+<!-- <button (click)="toggleCakes()">
   <ng-container *ngIf="isShown">Hide cakes</ng-container>
   <ng-container *ngIf="!isShown">Load cakes</ng-container>
 </button>
-<br />
+<br /> -->
 
-<br>
-<ul *ngIf="isShown">
+<ul *ngIf="isShown" class="cakes">
   <ng-container *ngFor="let cake of cakes">
-    <li><img [src]="cake.img" [alt]="cake.name">{{ cake.baker }}</li>
-    <p>{{ cake.amount | currency:'XAF' }}</p>
+    <li class="cake">
+      <img class="img" [src]="cake.img" [alt]="cake.name">
+      <p class="title">{{ cake.baker }}</p>
+      <p class="currency">{{ cake.amount | currency:'XAF' }}</p>
+      <button>Add to cart</button>
+    </li>
   </ng-container>
 </ul>
