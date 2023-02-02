@@ -11,8 +11,8 @@
 
 <br>
 <ul *ngIf="isShown">
-  <ng-container>
-    <li *ngFor="let cake of cakes"><img [src]="cake.img" [alt]="cake.name">{{ cake.baker }}</li>
+  <ng-container *ngFor="let cake of cakes">
+    <li><img [src]="cake.img" [alt]="cake.name">{{ cake.baker }}</li>
+    <p>{{ cake.amount | currency:'XAF' }}</p>
   </ng-container>
-  
 </ul>

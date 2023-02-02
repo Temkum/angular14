@@ -4,6 +4,7 @@ interface Cake {
   name: string;
   baker: string;
   img: string;
+  amount: number;
 }
 
 @Component({
@@ -18,15 +19,17 @@ export class CakesComponent {
       name: 'Yummy cakes',
       baker: 'Cakes by sparrow',
       img: '../../assets/img/cake.jpg',
+      amount: 500
     },
     {
       name: 'Yummy cakes',
       baker: 'Cakes by sparrow',
-      img: '../../assets/img/cake2.jpg'
+      img: '../../assets/img/cake2.jpg',
+      amount: 900
     }
   ];
 
-  isShown: boolean = false;
+  isShown: boolean = true;
 
   toggleCakes() {
     this.isShown = !this.isShown;
