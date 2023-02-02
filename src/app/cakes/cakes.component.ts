@@ -1,11 +1,5 @@
 import { Component } from '@angular/core';
-
-interface Cake {
-  name: string;
-  baker: string;
-  img: string;
-  amount: number;
-}
+import { Cake } from '../types/Cake';
 
 @Component({
   selector: 'app-cakes',
@@ -29,9 +23,15 @@ export class CakesComponent {
     }
   ];
 
+  cake: Cake[] = [];
+
   isShown: boolean = true;
 
   toggleCakes() {
     this.isShown = !this.isShown;
+  }
+
+  addToCart(cake: Cake) {
+    console.log(cake);
   }
 }

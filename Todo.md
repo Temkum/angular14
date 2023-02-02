@@ -81,3 +81,6 @@
 - Used to transform strings, currency, dates and other display data
 
 ## style component
+
+## parent and child components
+- listen to custom event
