@@ -4,11 +4,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { CakesComponent } from './cakes/cakes.component';
+import { CakeComponent } from './cake/cake.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CakesComponent
+    CakesComponent,
+    CakeComponent
   ],
   imports: [
     BrowserModule, FormsModule
