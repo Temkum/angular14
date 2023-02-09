@@ -14,7 +14,7 @@ export class CakesComponent {
   baker2: string = 'Cakes by sparrow' 
   src2: string = '../../assets/img/cake2.jpg'
   
-  isShown: boolean = false;
+  isShown: boolean = true;
 
   toggleCakes() {
     this.isShown = !this.isShown;

@@ -15,11 +15,12 @@ input {
 
 ul {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 10px;
 
-  li{
-    list-style: none;;
+  li {
+    list-style: none;
+    ;
   }
 }
 

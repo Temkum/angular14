@@ -57,17 +57,21 @@
 
 - directives add additional behavior to elements
 - use built-in directives to manage forms, lists, and what users see
-  
+
 1. components -> used with a template
 2. attributes -> change appearance of elements, components or other directives
 3. structural -> change the DOM layout
 
 > builtin attribute directives
+
 - ngClass
 - ngStyle
 - ngModel -> helps on two way binding
 
 > builtin structural directives
+
 - ngIf
 - ngFor
 - ngSwitch
+
+## styled components
